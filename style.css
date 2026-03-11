@@ -1,0 +1,34 @@
+.nav-links{
+    list-style: none;
+}
+
+
+body{
+    transition: background-color 700ms ease;
+}
+
+#money{
+    
+}
+
+
+
+
+
+/* céges teló méret (vekker)*/
+@media (max-width: 576px){
+
+}
+
+
+/* tablet puca*/
+@media (min-width: 577px) and (max-width: 768px){
+
+}
+
+
+/* számítógépre kapcsolt monitor mérete */
+@media (max-width: 1024px){
+
+}
+

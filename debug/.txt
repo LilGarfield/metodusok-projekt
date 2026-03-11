@@ -1,0 +1,24 @@
+1. Alapfogalmak
+Szintaxis:
+A metódus egy fejlécből és egy törzsből áll. A fejléc tartalmazza a visszatérési típust, a metódus nevét és a paraméterlistát. A törzs a tényleges végrehajtandó utasításokat foglalja magába, kapcsos zárójelek között. Ha a metódus nem ad vissza értéket, a visszatérési típus void.
+Hívás:
+Metódust a nevével és a szükséges argumentumok megadásával hívunk meg. Hívható közvetlenül (azonos osztályon belül) vagy objektumon/osztályon keresztül (külső hívás esetén).
+
+2. Metódustípusok
+Eljárás:
+Olyan metódus, amely elvégez egy feladatot, de nem ad vissza értéket. Visszatérési típusa void. Célja valamilyen művelet végrehajtása, például kiírás vagy adatmódosítás.
+Függvény:
+Olyan metódus, amely egy feladatot hajt végre és visszaad egy értéket. A visszatérési típus konkrét (pl. int, String), és a return kulcsszóval adja vissza az eredményt.
+
+
+
+
+///////////// kifejtve
+
+
+
+Eljárás (void metódus)
+Az eljárás olyan metódus, amely elvégez egy adott feladatot, de nem ad vissza semmilyen értéket a hívó félnek. Visszatérési típusa mindig void. Tipikusan akkor használjuk, amikor valamilyen műveletet szeretnénk végrehajtani az eredmény visszaadása nélkül — például adatot írunk ki a képernyőre, módosítunk egy változót, vagy frissítünk egy listát. Az eljárásban nem kötelező return utasítást használni, de ha mégis szerepel, csak a metódusból való kilépésre szolgál, érték nélkül.
+
+Függvény (return típusos metódus)
+A függvény olyan metódus, amely elvégez egy feladatot és visszaad egy értéket a hívó félnek. A fejlécben meg kell adni a visszatérési érték típusát (pl. int, double, String, boolean), és a metódus törzsében kötelezően szerepelnie kell egy return utasításnak, amely visszaadja a megfelelő típusú értéket. A visszaadott értéket a hívó félnél el lehet tárolni egy változóban, vagy közvetlenül fel lehet használni. Függvényeket akkor alkalmazunk, amikor egy számítás vagy művelet eredményére van szükségünk a program további részében.
