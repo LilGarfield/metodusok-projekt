@@ -9,14 +9,12 @@
 <body>
     
     <main>
-        <header>
-            <img src="nopng-removebg-preview.png" alt="majomparade látható, ahol a majom éppem az orrát túrja" id="money">
+        <header class="navbar">
             <h1>Metódusok alapjai projekt</h1>
-            <nav>
-                
+            <nav class="navClass">
                 <ul class="nav-links">
-                    <li><a href=""></a>Link</li>
-                    <li><a href=""></a></li>                   
+                    <li class="nav-item"><a href="">Metódusok, alapfogalmak</a></li>
+                    <li class="nav-item"><a href="">C# Metódusok alkalmazása</a></li>                   
                 </ul>
             </nav>
         </header>
@@ -26,9 +24,56 @@
         
 
         <!-- c# cuccok -->
-        <div>
+        <section>
+            <div class="egymasmelle">
+                <h2>Metódusok C#-ban.</h2>
+                <h3>A metódus szintaxisa</h3>
+                <p>Metódusokhoz kapcsolódó alapfogalmak A metódus szintaxisa Egy metódus három fő részből áll: fejléc, törzs, és opcionálisan visszatérési érték.</p>
+                <p>A fejléc tartalmazza a metódus nevét, láthatóságát, visszatérési típusát és paramétereit. A törzs a kapcsos zárójelek között található utasításokat foglalja magában. Ha a metódus nem <strong>void</strong> típusú, akkor a törzsben kötelező <strong>return</strong> utasítást használni.</p>
+                <h3>A metódus hívásának módjai</h3>
+                <p>Metódust meghívni a nevével és a szükséges argumentumok megadásával lehet. Ha a metódus egy osztály példányához tartozik, a példányon keresztül hívjuk. Ha statikus, elegendő az osztálynév.</p>
+                <i>Egyszerű hívás – az eredményt eltároljuk:</i>
+                <p>
+                <code>int osszeg = Osszead(3, 5); <br>
+                    Console.WriteLine(osszeg); // 8</code></p>
 
-        <div>
+            </div>
+        
+            <div class="egymasmelle">
+                <h2>Metódustípusok</h2>
+                <h3>Eljárások (void metódusok)</h3>
+                <p>Az eljárások olyan metódusok, amelyek nem adnak vissza értéket. Visszatérési típusuk <strong>void.</strong> Ezeket akkor használjuk, ha egy tevékenységet szeretnénk elvégeztetni – például kiírni valamit a képernyőre, módosítani egy listát, vagy naplózni egy eseményt –, de az eredményre nincs szükségünk visszatérési értékként.</p>
+                <p><i>Eljárás:</i></p>
+                <code>
+                    public static void Udvozles(string nev) <br>
+                    { <br>
+                        Console.WriteLine("Üdvözöllek, " + nev + "!"); <br>
+                    }
+                </code>
+                <p><i>Hívás:</i></p>
+                <code>
+                    Udvozles("Anna"); // Üdvözöllek, Anna!
+                </code>
+
+                <h3>Függvények (visszatérési értékkel rendelkező metódusok)</h3>
+                <p>A függvények olyan metódusok, amelyek mindig visszaadnak egy értéket. A visszatérési típust a fejlécben kell megadni <strong>(int, string, bool,</strong> stb.), és a törzsben kötelező a <strong>return</strong> utasítás használata.</p>
+                <p><i>Egyszerű matematikai függvény:</i></p>
+                <code>
+                    public static int Negyzet(int szam) <br>
+                    { <br>
+                        return szam * szam; <br>
+                    }
+                </code>
+                <p><i>Szöveget visszaadó függvény:</i></p>
+                <code>
+                    public static string TeljesNev(string vezeteknev, string keresztnev) <br>
+                    { <br>
+                        return vezeteknev + " " + keresztnev; <br>
+                    }
+                </code>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>

@@ -1,21 +1,20 @@
-.nav-links{
-    list-style: none;
-}
-
-
 body{
     transition: background-color 700ms ease;
 }
 
-#money {
-    animation: spin 0.001s linear infinite;
-    width: 190px;
+.nav-links{
+    list-style: none;
 }
 
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+
+
 
 
 
@@ -23,15 +22,19 @@ body{
 /* céges teló méret (vekker)*/
 @media (max-width: 576px){
     body{
-        background-color: brown;
+        background-color: #002649;
+        color: #ffffff;
     }
+
+
 }
 
 
 /* tablet puca*/
 @media (min-width: 577px) and (max-width: 768px){
     body{
-        background-color: rgb(255, 0, 0);
+        background-color: #e1dbdb;
+        color: #000000;
     }
 }
 
@@ -39,7 +42,14 @@ body{
 /* számítógépre kapcsolt monitor mérete */
 @media (min-width: 1024px){
     body{
-            background-color: blue;
+            background-color: #ffffff;
+            color: #000000;
         }
+        
+    section{
+        display: flex;
+        padding: 5px;
+    }
+
 }
 
