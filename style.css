@@ -1,9 +1,15 @@
 body{
     transition: background-color 700ms ease;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ddd8d8;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar{
@@ -11,60 +17,198 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #c8c2c2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card1, .card2{
+    background-color: #ddd8d8;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 300ms ease;
+    flex: 1;
+}
+
+thead tr td{
+    background-color: lightgrey;
+    font-weight: bold;
 }
 
 
+.card1:hover, .card2:hover{
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td{
+    border: 2px solid #555;
+}
+
+td{
+    padding: 0.4rem 0.6rem;
+}
+
+    .c1{
+        display: flex;
+        width: 50%;
+    }
+
+    .c2{
+        display: none;
+    }
+
+
+/* ASDTAUZFWOIÉGDTUWAPUU választó vonal🥰 */
 
 
 
 
-
-/* céges teló méret (vekker)*/
+/* céges teló méret */
 @media (max-width: 576px){
     body{
         background-color: #002649;
-        color: #ffffff;
+        color: #f0f0f0;
+        overflow-x: hidden;
     }
 
     a{
         text-decoration: none;
-        color: #000000;
+        color: #f0f0f0;
+        font-weight: bold;
     }
 
+    td{
+        display: table-cell;
+        width: auto;
+        box-sizing: content-box;
+        padding: 0.4rem 0.6rem;
+    }
+
+    table tr td{
+        background-color: unset;
+        color: grey;
+        border-color: #555;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .card1, .card2{
+        background-color: #003f7a;
+        margin: 0.5rem;
+        padding: 0.7rem;
+        color: #c0c8d4;
+        border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+
+    .navbar{
+        background-color: #001e38;
+    }
+
+    .c1{
+        display: none;
+    }
+
+    .c2{
+        display: flex;
+    }
+    td{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    table tr td{
+        background-color: lightseagreen;
+        color: black;
+    }
+    table tr td:first-child{
+        background-color: lightblue;
+        color: black;
+    }
 
 }
 
 
-/* tablet puca*/
-@media (min-width: 577px) and (max-width: 768px){
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px){
     body{
-        background-color: #e1dbdb;
-        color: #000000;
+        background-color: #ddd8d8;
+        color: #111111;
     }
 
     a{
         text-decoration: none;
-        color: #000000;
+        color: #111111;
+        font-weight: bold;
+    }
+
+    .c1{
+        display: flex;
+        width: 50%;
+    }
+
+    .c2{
+        display: none;
     }
 }
 
 
-/* számítógépre kapcsolt monitor mérete */
+/* monitor */
 @media (min-width: 1024px){
     body{
-            background-color: #ffffff;
-            color: #000000;
-        }
-        
+        background-color: #f5f5f5;
+        color: #111111;
+    }
+
     section{
         display: flex;
-        padding: 5px;
+        justify-content: space-evenly;
+        padding: 10px;
+        gap: 1rem;
     }
 
     a{
         text-decoration: none;
-        color: #000000;
+        color: #111111;
+        font-weight: bold;
     }
 
-}
+    li{
+        padding: 0.5rem;
+    }
 
+    .navbar{
+        padding: 0.6rem 1.5rem;
+    }
+    section {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .c1{
+        display: flex;
+        width: 50%;
+        
+    }
+
+    .c2{
+        display: none;
+    }
+}

@@ -13,8 +13,8 @@
             <h1>Metódusok alapjai projekt</h1>
             <nav class="navClass">
                 <ul class="nav-links">
-                    <li class="nav-item"><a href="">Metódusok, alapfogalmak</a></li>
-                    <li class="nav-item"><a href="">C# Metódusok alkalmazása</a></li>                   
+                    <li class="nav-item"><a href="#1">Metódusok, alapfogalmak</a></li>
+                    <li class="nav-item"><a href="#2">C# Metódusok alkalmazása</a></li>                   
                 </ul>
             </nav>
         </header>
@@ -24,8 +24,8 @@
         
 
         <!-- c# cuccok -->
-        <section>
-            <div class="egymasmelle">
+        <section id="1">
+            <div class="card1">
                 <h2>Metódusok C#-ban.</h2>
                 <h3>A metódus szintaxisa</h3>
                 <p>Metódusokhoz kapcsolódó alapfogalmak A metódus szintaxisa Egy metódus három fő részből áll: fejléc, törzs, és opcionálisan visszatérési érték.</p>
@@ -37,9 +37,12 @@
                 <code>int osszeg = Osszead(3, 5); <br>
                     Console.WriteLine(osszeg); // 8</code></p>
 
+                <img src="csharpai.png" alt="" class="c1">    
+                <img src="c-sharp-logo.png" alt="" class="c2">                
+
             </div>
         
-            <div class="egymasmelle">
+            <div class="card2">
                 <h2>Metódustípusok</h2>
                 <h3>Eljárások (void metódusok)</h3>
                 <p>Az eljárások olyan metódusok, amelyek nem adnak vissza értéket. Visszatérési típusuk <strong>void.</strong> Ezeket akkor használjuk, ha egy tevékenységet szeretnénk elvégeztetni – például kiírni valamit a képernyőre, módosítani egy listát, vagy naplózni egy eseményt –, de az eredményre nincs szükségünk visszatérési értékként.</p>
@@ -73,6 +76,36 @@
                 </code>
             </div>
         </section>
+        <div>
+            <table id="2">
+                <thead>
+                    <tr>
+                        <td>Eljárás</td>
+                        <td>Függvény</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Visszatérési típusa void</td>
+                    <td>Visszatérési típusa bármilyen lehet (int, string, bool, stb.)</td>
+                </tr>
+                <tr>
+                    <td>A return utasítás nem kötelező</td>
+                    <td>A return utasítás kötelező</td>
+                </tr>
+                <tr>
+                    <td>Tevékenységet végez el, nem ad vissza eredményt</td>
+                    <td>Kiszámít vagy előállít egy értéket, amit visszaad</td>
+                </tr>
+                <tr>
+                    <td>Önállóan hívjuk, eredményt nem tárolunk</td>
+                    <td>Kifejezésben vagy változóba mentve hívjuk</td>
+                </tr>
+                <tr>
+                    <td>Példa: Udvozles("Anna")</td>
+                    <td>Példa: int x = Negyzet(5)</td>
+                </tr>
+            </table>
+        </div>
 
     </main>
 </body>
